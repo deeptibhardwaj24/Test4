@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Bootstrap Example</title>
+  
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style1.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  
+  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<script>
+
+$(document).ready(function(){
+  $(".div1").hover(function(){
+    $(this).css("background-color", "pink");
+  }, function(){
+    $(this).css("background-color", "white");
+  });
+});
+
+</script>
+
+<style>
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+.div1{
+
+display:table-cell;
+
+ }
+
+
+ .price{
+ 	color:orange;
+ 	text-align:center;
+ }
+
+ .desc{
+
+ 	color:black;
+ 	text-align:center;
+
+
+ }
+ </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+<div class=container-fluid>
+<div class="navbar-header">
+<div class="col-md-3">
+<a class="navbar-brand" href="#">E-SHOPPER</a>
+</div>
+<div class="col-md-1">
+<button class="btn btn-primary"> USA</button>
+</div>
+<div class="col-md-2">
+<button class="btn btn-primary"> DOLLAR</button>
+</div>
+
+
+<div class="col-md-1 pull-right">
+<p>Logout<span class="glyphicon glyphicon-lock"></span></p>
+</div>
+
+
+<div class="col-md-1 pull-right">
+<p>Cart<span class="glyphicon glyphicon-shopping-cart"></span></p>
+</div>
+
+
+
+
+<div class="col-md-1 pull-right">
+<p>Checkout<span class="glyphicon glyphicon-star"></span></p>
+</div>
+
+
+
+<div class="col-md-1 pull-right">
+<p>Wishlist<span class="glyphicon glyphicon-star"></span></p>
+</div>
+
+
+
+<div class="col-md-1 pull-right">
+<p>Account<span class="glyphicon glyphicon-user"></span></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</nav>
+
+
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Blog1</a></li>
+          <li><a href="#">Blog2</a></li>
+          <li><a href="#">Blog3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">404</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+
+    <div class="col-sm-3 col-md-3 pull-right">
+    <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+            </form>
+        </div>        
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <br>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/home/knoldus/Desktop/test4/s3.jpg" alt="shopping" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="/home/knoldus/Desktop/test4/shops-im.jpg" alt="is" width="460" height="300">
+      </div>
+    
+      <div class="item">
+        <img src="/home/knoldus/Desktop/test4/slide-4.jpg" alt="fun" width="460" height="345">
+      </div>
+
+      
+    
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br><br>
+
+
+<div class="row">
+
+<div class="div1 col-md-4">
+<img src="/home/knoldus/Desktop/test4/d1.jpg" >
+<p class="price">$56</p>
+<p class="desc">Easy polo black edition</p>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">View</button>
+
+
+<div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <img src="/home/knoldus/Desktop/test4/d1.jpg" >
+          <p>SALE SEASON!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="div1 col-md-4">
+<img src="/home/knoldus/Desktop/test4/d3.jpg">
+<p class="price">$56</p>
+<p class="desc">Easy polo black edition</p>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">View</button>
+
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <img src="/home/knoldus/Desktop/test4/d3.jpg">
+          <p>SALE IS ON!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="div1 col-md-4">
+<img src="/home/knoldus/Desktop/test4/d8.jpg">
+<p class="price">$56</p>
+<p class="desc">Easy polo black edition</p>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">View</button>
+
+
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <img src="/home/knoldus/Desktop/test4/d8.jpg" >
+          <p>SALE SEASON!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="row">
+
+<div class="div1 col-md-3">
+<img src="/home/knoldus/Desktop/test4/d6.jpg">
+<p class="price">$56</p>
+<p class="desc">Easy polo black edition</p>
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">View</button>
+
+
+<div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <img src="/home/knoldus/Desktop/test4/d6.jpg" >
+          <p>SALE SEASON!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="div1 col-md-4">
+<img src="/home/knoldus/Desktop/test4/d7.jpg">
+<p class="price">$56</p>
+<p class="desc">Easy polo black edition</p>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">View</button>
+
+
+<div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <img src="/home/knoldus/Desktop/test4/d7.jpg" >
+          <p>SALE SEASON!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="div1 col-md-4">
+<img src="/home/knoldus/Desktop/test4/d9.jpg">
+<p class="price">$56</p>
+<p class="desc">Easy polo black edition</p>
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">View</button>
+
+
+<div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+        <img src="/home/knoldus/Desktop/test4/d9.jpg" >
+          <p>SALE SEASON!!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
